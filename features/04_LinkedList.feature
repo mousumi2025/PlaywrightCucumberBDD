@@ -1,4 +1,4 @@
-Feature: QueuePage Functionality
+Feature: LinkedList Functionality
 
 @linkedlist  
     Scenario: Verify that user is able to navigate to "linkedlist" page
