@@ -80,7 +80,7 @@ When('User clicks Practice Questions button', async function () {
 });
 
 Then('User should be in Practice Questions page', async function () {
-  await expect(this.page).toHaveURL(/practice/);
+  await expect(this.page.locator('text=Practice Questions')).toBeVisible();
 });
 
 When('User clicks Try Here button', async function () {
