@@ -197,7 +197,7 @@ Then('User should be redirected to Application page', async function () {
 });
 
 Then('User should be redirected to Practice page', async function () {
-  await expect(this.page).toHaveURL(/practice/);
+  await expect(this.page.locator('text=Practice Questions')).toBeVisible();
 });
 
 Then('User should be on Home page after action', async function () {
