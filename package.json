@@ -4,7 +4,7 @@
   "description": "Playwright Cucumber BDD Framework in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --parallel 3 --format json:reports/cucumber_report.json",
+    "test": "if exist reports rmdir /s /q reports && cucumber-js --parallel 3 --format json:reports/cucumber_report.json",
     "test:headed": "set HEADLESS=false && cucumber-js",
     "test:report": "node utils/helper.js",
     "test:chromium": "cross-env BROWSER=chromium cucumber-js --parallel 3",
