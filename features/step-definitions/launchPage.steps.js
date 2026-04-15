@@ -1,23 +1,3 @@
-/*const { Given, When, Then } = require("@cucumber/cucumber");
-const { chromium } = require("playwright");
-const assert = require("assert");
-
-let browser;
-let page;
-
-Given("the user has browser open", async function () {
-  browser = await chromium.launch({ headless: false });
-  page = await browser.newPage();
-});
-
-When("the user enters correct dsAlgo portal URL", async function () {
-  await page.goto("https://dsportalapp.herokuapp.com/");
-});
-
-Then("the user should be able to land on dsAlgo portal", async function () {
-  const title = await this.page.title();
-  console.log("PAGE TITLE IS:", title);
-});*/
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
 const LaunchPage = require('../../pages/launchPage');
